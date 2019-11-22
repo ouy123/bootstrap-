@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>在线考试系统-管理员端</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/test-paper.css">
+</head>
+<body>
+<!------------------------头部----------------------------->
+<header id="header" class="container">
+    <div class="header-top">
+        <h1>在线考试系统</h1>
+        <strong class="pull-right">欢迎：管理员</strong>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Brand</a>-->
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="homePage.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="stu-information.html">考生信息管理</a></li>
+                    <li><a href="stu-score.html">考生成绩查询</a></li>
+                    <li class="active"><a href="test-paper.html">试卷管理</a></li>
+                    <li><a href="problems.html">题目管理</a></li>
+                    <li><a href="indexManager.html">退出系统</a></li>
+
+                </ul>
+
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<!------------------------头部----------------------------->
+<!--*************************内容区*************************-->
+<section id="testContent" class="container">
+
+        <!-- 标签页头-->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">创建试卷</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">查询试卷</a></li>
+
+        </ul>
+        <!-- 标签页内容 -->
+        <div class="tab-content">
+            <!--------创建试卷--------->
+            <!--======板块一内容========-->
+            <div role="tabpanel" class="tab-pane active left" id="home">
+                <div class="testbg container">
+<div class="row text-center create-test">
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="test-title">试卷名称：</label>
+            <input type="text" class="form-control" id="test-title" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="test-subject">试卷科目：</label>
+            <input type="text" class="form-control" id="test-subject" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="text-type">试卷类型：</label>
+            <input type="text" class="form-control" id="text-type" placeholder="">
+        </div>
+        <button type="submit" class="btn btn-default">上传试卷</button>
+    </form>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    添加单选题
+                </a>
+                <a href="#" class="list-group-item">添加多选题</a>
+                <a href="#" class="list-group-item">添加判断题</a>
+                <a href="#" class="list-group-item">添加填空题</a>
+                <a href="#" class="list-group-item">添加解答题</a>
+            </div>
+        </div>
+          <div class="col-md-8">
+<div class="text">
+    <form class="form-horizontal" method="post" enctype="multipart/form-data" id="file_upload">
+        <div class="form-group">
+            <label for="inputnum" class="col-sm-2 control-label">题号：</label>
+            <div class="col-sm-10">
+                <input type="" class="form-control" id="inputnum" placeholder="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="input1" class="col-sm-2 control-label">题目：</label>
+            <div class="col-sm-10">
+                <input type="" class="form-control" id="input1" placeholder="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="test-image-file" class="col-sm-2 control-label">上传图片：</label>
+            <div class="col-sm-10">
+                    <input type="file" id="test-image-file" name="test" accept="image/gif, image/jpeg, image/png, image/jpg" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputA" class="col-sm-2 control-label">选项A：</label>
+            <div class="col-sm-10">
+                <input type="" class="form-control" id="inputA" placeholder="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputB" class="col-sm-2 control-label">选项B：</label>
+            <div class="col-sm-10">
+                <input type="" class="form-control" id="inputB" placeholder="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputC" class="col-sm-2 control-label">选项C：</label>
+            <div class="col-sm-10">
+                <input type="" class="form-control" id="inputC" placeholder="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputD" class="col-sm-2 control-label">选项D：</label>
+            <div class="col-sm-10">
+                <input type="" class="form-control" id="inputD" placeholder="">
+            </div>
+        </div>
+        <div class="form-group" style="">
+            <label  class="col-sm-2 control-label">正确答案：</label>
+            <div class="col-sm-10 radioboxs">
+                <lable class="radiobox">A：<input type="radio"> </lable>
+                <lable class="radiobox">B：<input type="radio"> </lable>
+                <lable class="radiobox">C：<input type="radio"> </lable>
+                <lable class="radiobox">D：<input type="radio"> </lable>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputanswer" class="col-sm-2 control-label">答案解析：</label>
+            <div class="col-sm-10">
+                <textarea rows="3" cols="40" id="inputanswer"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-6">
+                <button type="submit" class="btn btn-default btn-block btn-info">添加试题</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+          </div>
+    </div>
+</div>
+             </div>
+            </div>
+            <!--======板块二内容========-->
+            <div role="tabpanel" class="tab-pane" id="profile"></div>
+
+        </div>
+
+
+
+</section>
+
+<!--*************************内容区*************************-->
+<!-----------------------尾部------------------------------->
+<footer id="footer" class="container">
+    <div class="text-center">
+        XXXXXXXX·在线考试网--XXXXXX@wqdjqe;x;qwq
+    </div>
+</footer>
+<!-----------------------尾部------------------------------->
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

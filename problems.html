@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>题目管理</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/problems.css">
+</head>
+<body>
+<!------------------------头部----------------------------->
+<header id="header" class="container">
+    <div class="header-top">
+        <h1>在线考试系统</h1>
+        <strong class="pull-right">欢迎：管理员</strong>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Brand</a>-->
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="homePage.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="stu-information.html">考生信息管理</a></li>
+                    <li><a href="stu-score.html">考生成绩查询</a></li>
+                    <li><a href="test-paper.html">试卷管理</a></li>
+                    <li class="active"><a href="problems.html">题目管理</a></li>
+                    <li><a href="indexManager.html">退出系统</a></li>
+
+                </ul>
+
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<!------------------------头部----------------------------->
+<!--*************************内容区*************************-->
+<section id="problemContent">
+    <div class="container">
+        <div class="row pro-top text-center">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="test-title">题目：</label>
+                    <input type="text" class="form-control" id="test-title" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="test-type">题型：</label>
+                    <select class="form-control" id="test-type">
+                        <option>全选</option>
+                        <option>单选题</option>
+                        <option>多选题</option>
+                        <option>填空题</option>
+                        <option>解答题</option>
+                        <option>判断题</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="text-library">所属题库：</label>
+                    <select class="form-control" id="text-library">
+                        <option>全选</option>
+                        <option>高数</option>
+                        <option>英语</option>
+                        <option>数据结构</option>
+                        <option>java</option>
+                        <option>c++</option>
+                    </select>
+                </div>
+                <button type="" class="btn btn-default">查询</button>
+            </form>
+        </div>
+    <div>
+    <div class="table-responsive">
+        <table class="table">
+            <tr>
+               <th><input type="checkbox"></th>
+               <th>题目</th>
+               <th>题型目</th>
+               <th>题库目</th>
+            </tr>
+            <tr >
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>x^2+sinx的一个原函数是____。</td>
+                <td>填空题</td>
+                <td>默认题库</td>
+            </tr>
+        </table>
+    </div>
+</div>
+    </div>
+
+
+</section>
+
+<!--*************************内容区*************************-->
+<!-----------------------尾部------------------------------->
+<footer id="footer" class="container">
+    <div class="text-center">
+        XXXXXXXX·在线考试网--XXXXXX@wqdjqe;x;qwq
+    </div>
+</footer>
+<!-----------------------尾部------------------------------->
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/pro.js"></script>
+</body>
+</html>

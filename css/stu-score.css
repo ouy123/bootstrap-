@@ -1,0 +1,11 @@
+#scoreContent {
+	margin-top: 50px;
+	margin-bottom: 120px;
+}
+#scoreContent .form-horizontal .form-group i{
+	color: red;
+	font-size: 10px;
+}
+#scoreContent .form-horizontal button{
+	margin-top: 20px;
+}

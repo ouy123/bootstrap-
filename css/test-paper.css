@@ -1,0 +1,27 @@
+#testContent{
+	margin-bottom: 50px;
+}
+#testContent .tab-content{
+	margin-top: 40px;
+}
+#testContent .tab-content .testbg .create-test{
+	margin-bottom: 40px;
+}
+#testContent .tab-content .text{
+	border: 1px solid #e8e8e8;
+	padding:40px 20px 0 20px;
+}
+#testContent .tab-content .text .radioboxs{
+	margin-top: 7px;
+	
+}
+#testContent .tab-content .text .radioboxs .radiobox{
+	margin-right: 10px;
+}
+#testContent .tab-content a.active{
+	background-color: #68bfc5;
+}
+#testContent .tab-content a:hover{
+	background-color: #68bfc5;
+	color: white;
+}

@@ -1,0 +1,65 @@
+.bgimg{
+	width: 100%;
+	height: 600px;
+	/*background-color: orangered;*/
+	background-image: url(../img/bgc.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.login{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -130px;
+	margin-left: -300px;
+	width: 600px;
+	height: 280px;
+	background-color: rgba(240, 240, 240, 0.62);
+	box-shadow: 0 0 10px;
+}
+.title h4{
+	color: rgba(255, 255, 255, 0.99);
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(0, 122, 122, 0.62);
+	margin: 0px ;
+
+}
+.bgimg .pos{
+	position: relative;
+}
+.bgimg .imgM{
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/manager.png);
+	background-position: center center;
+	border-radius: 100%;
+	margin: 10px 0 0 20px;
+}
+.bgimg .imgS{
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/stu.png);
+	background-position: center center;
+	border-radius: 100%;
+	margin:10px 20px 0 0;
+}
+a{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	font-size: 20px;
+	line-height: 200px;
+	margin-left: -15px;
+	color: transparent;
+	text-decoration: none;
+	transition: all 1s ease;
+}
+a:hover{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.51);
+	text-decoration:none;
+}

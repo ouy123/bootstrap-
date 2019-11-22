@@ -1,0 +1,19 @@
+
+#problemContent .container .pro-top{
+	background-color: #bfccd3;
+	height: 50px;
+	line-height: 50px;
+	margin: auto;
+	/*margin-bottom: 1px;*/
+	width: 1140px;
+	border-bottom: 1px solid #669ea2;
+}
+#problemContent .table-responsive th{
+	background-color: #f9fbfd;
+}
+#problemContent .table-responsive  tr.active td{
+	background-color: #dcedf7;
+}
+#problemContent .table-responsive  tr:hover td{
+	background-color: #dcedf7;
+}
